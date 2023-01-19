@@ -1,3 +1,5 @@
+//how can this be simplified?
+
 function smash(words) {
     
     let sentence = words.join(" ")
@@ -17,6 +19,11 @@ function unusualFive() {
   }
 
   console.log(unusualFive())
+
+
+
+// Not clear on the use of joins, review further
+
 
 
 function reverseWords(str) {
