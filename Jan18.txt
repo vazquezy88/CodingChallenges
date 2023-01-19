@@ -36,9 +36,11 @@ function reverseWords(str) {
   console.log(reverseWords('The quick brown fox jumps over the lazy dog.')
 
 
+//This had no additional info on where to find triangle info
+
 function isTriangle(a,b,c){
 
- the sum of the lengths of any two sides of a triangle must be greater than or equal to the length of the third side. 
+//the sum of the lengths of any two sides of a triangle must be greater than or equal to the length of the third side. 
 
     if (a+b >= c && b+c >= a && a+c >= b){
         return true
