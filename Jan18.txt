@@ -1,0 +1,64 @@
+function smash(words) {
+    
+    let sentence = words.join(" ")
+    return sentence
+}
+console.log(smash(['hello', 'world', 'this', 'is', 'great']))
+
+function makeUpperCase(str) {
+    return str.toUpperCase()
+  }
+  console.log(makeUpperCase(""))
+
+function unusualFive() {
+    
+    let str = "apple"
+    return str.length;
+  }
+
+  console.log(unusualFive())
+
+function reverseWords(str) {
+    
+    let strArray = str.split(' ')
+        
+    let revArray = strArray.map(revFunc).join(" ")
+    //console.log(revArray.toString())
+    return revArray
+
+    function revFunc(word){
+        return word.split('').reverse().join("")
+    }
+    
+  }
+
+  console.log(reverseWords('The quick brown fox jumps over the lazy dog.')
+
+function isTriangle(a,b,c){
+
+ the sum of the lengths of any two sides of a triangle must be greater than or equal to the length of the third side. 
+
+    if (a+b >= c && b+c >= a && a+c >= b){
+        return true
+    } else {
+        return false;
+    }
+
+    let sVar = (a+b+c)*0.5
+    console.log(sVar)
+
+    // write out of heron's formula
+    let sInner = (sVar-a)*(sVar-b)*(sVar-c)
+    let sTotals = sVar* sInner
+    console.log(sTotals)
+
+    let heronForm = Math.sqrt(sTotals) 
+    console.log(heronForm)
+
+    if (heronForm >= 0) {
+        return true
+    } else {
+        return false
+    }
+}
+console.log(isTriangle(7,2,2))
